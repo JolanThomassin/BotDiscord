@@ -1,5 +1,5 @@
 # Maintenance 
- - Mise à jour et ajout des Gifs présent
+ - Mise à jour et ajout des gifs présent
  - Ajout de la possibilité de lancer des recherches YouTube via le bot
 
 # Indication pour utiliser le bot
