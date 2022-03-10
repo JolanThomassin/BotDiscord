@@ -228,13 +228,11 @@ def getHug():
 	"https://i.pinimg.com/originals/bb/84/1f/bb841fad2c0e549c38d8ae15f4ef1209.gif",
 	"https://c.tenor.com/pcULC09CfkgAAAAC/hug-anime.gif",
 	"https://thumbs.gfycat.com/BlueDecimalAardwolf-max-1mb.gif",
-	"https://64.media.tumblr.com/988a4660509af669515a40fd2ee38ada/b6806f9e566d4b2e-1d/s1280x1920/e0827aed786d0eeed23689dc320940b108c4305a.gifv",
 	"https://cutewallpaper.org/21/hugs-anime/Anime-hug-GIFs-Get-the-best-GIF-on-GIPHY.gif",
-	"https://lh6.googleusercontent.com/proxy/rGVigru1Kivmm7xfWownzOeurzGiKjGVhVygLWDHD-pSryq9pMx_OLI-4CI9Gf_wYf0=s0-d",
 	"https://data.whicdn.com/images/334153915/original.gif",
 	"https://c.tenor.com/ah1gTzIiOT0AAAAd/anime-hug.gif"
 	]
-	aléatoire = random.randint(0, 9) 
+	aléatoire = random.randint(0, 7) 
 	choix = banque[aléatoire]
 	return choix
 
@@ -264,15 +262,12 @@ def getKiss():
 	"https://c.tenor.com/wDYWzpOTKgQAAAAC/anime-kiss.gif",
 	"https://aniyuki.com/wp-content/uploads/2021/07/aniyuki-anime-gif-kiss-27.gif",
 	"https://acegif.com/wp-content/uploads/anime-kissin-15.gif",
-	"https://64.media.tumblr.com/e32206d2d51424eeb3c017c1ef0e80ad/fbe2f7e1b2143d0b-6a/s500x750/0280bd77e01a03bac8994f7a3c1aafa267abad0a.gifv",
 	"https://giffiles.alphacoders.com/188/188348.gif",
 	"https://data.whicdn.com/images/200294594/original.gif",
 	"https://media1.giphy.com/media/ZRSGWtBJG4Tza/giphy.gif",
-	"https://i.kym-cdn.com/photos/images/newsfeed/001/372/173/dea.gif",
-	"https://img.wattpad.com/65c04624976b0581464a819d0e28820fa3efd016/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f41562d55397a51746b48506d47513d3d2d33352e313533393062613965373639343039313731373933313537303735302e676966",
-	"https://64.media.tumblr.com/53f25ab73acf07734ee43d4139027ea8/546adb9317fafdd9-64/s540x810/051063944dc8165d5bd15044287752c53662432e.gifv"
+	"https://i.kym-cdn.com/photos/images/newsfeed/001/372/173/dea.gif"
 	]
-	aléatoire = random.randint(0, 9) 
+	aléatoire = random.randint(0, 6) 
 	choix = banque[aléatoire]
 	return choix
 
