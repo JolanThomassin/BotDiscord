@@ -3,6 +3,10 @@ J'ai beaucoup utilisé un bot pour exprimer des réactions ou juste rigoler sur 
 
 Mais le bot à fini par être supprimé. Je me suis dis que je pourrais le programmer moi même, malgrès que je n'en avais jamais codé un. Et j'ai finalement réussi à recréer à l'idendique le bot que j'utilisais autrefois. C'est une banque d'images animées qui sont envoyées aléatoirement sur la demande de l'utilisateur.
 
+# Capacité du bot
+Pour utiliser les fonctionnalités du bot il suffit d'écrire un +, suivi de la commande voulue.
+![DiscordBot-02](https://user-images.githubusercontent.com/98430140/157706487-7649f03f-86b9-495b-bb3a-664699138679.png)
+
 # Maintenance 
 ## 1 - Ajout d'une boule de voyance
 ![oui](https://user-images.githubusercontent.com/98430140/157678822-b9657d81-f0a3-4755-ad46-6785faf76b24.png)
@@ -17,6 +21,9 @@ Les gifs avec l'extension .gifv ne sont pas pris en compte par Discord, ils doiv
 ![image](https://user-images.githubusercontent.com/98430140/157691432-094117b0-4243-4ae3-973d-f8b2b4418bed.png)
  - Partie Kiss : -3 gifs
  - Partie Hug : -2 gifs
+
+### Ajout des Gifs
+![image](https://user-images.githubusercontent.com/98430140/157706250-b30cffd5-623a-4700-a7b4-e29e437c6fb8.png)
 
 # Indication pour utiliser le bot
 Pour que le bot fonctionne il faut :
