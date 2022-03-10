@@ -1,12 +1,12 @@
 # Maintenance 
-## Ajout d'une boule de voyance
+## 1 - Ajout d'une boule de voyance
 ![oui](https://user-images.githubusercontent.com/98430140/157678822-b9657d81-f0a3-4755-ad46-6785faf76b24.png)
 ![non](https://user-images.githubusercontent.com/98430140/157678912-58b44cef-2919-4961-b063-bf0fcc7ba775.png)
 
-## Ajout de la possibilité de lancer des recherches YouTube via le bot
+## 2 - Ajout de la possibilité de lancer des recherches YouTube via le bot
 ![YouTube](https://user-images.githubusercontent.com/98430140/157679130-c7aac520-0df9-4532-9374-1027701099ca.png)
 
-## Mise à jour et ajout des gifs présent
+## 3 - Mise à jour et ajout des gifs présent
 
 # Indication pour utiliser le bot
 Pour que le bot fonctionne il faut :
