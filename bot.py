@@ -182,7 +182,7 @@ async def pat(ctx, member:discord.Member):
 	await ctx.send(embed=embed)
 
 ##################### Fonction +dismoi #####################
-@client.command(pass_context=True, name = "dismoi", aliases =["dm"])
+@client.command(pass_context=True, name = "dismoi", aliases =["dm", "dis"])
 async def dismoi(ctx):
 	imageEtTexte = getDismoi()
 	embed=discord.Embed(
@@ -222,8 +222,19 @@ def fonctionSeul(envoyeur, receveur) :
 
 ##################### Banque de Gif #####################
 def getHug():
-	banque = [
+	banque = [ 
+	"https://c.tenor.com/6kyMpCufe9gAAAAC/cuddle-anime.gif",
+	"https://c.tenor.com/zEz00ZxujqMAAAAC/blush-hug.gif",
+	"https://c.tenor.com/mUZk1lVRSHQAAAAC/noragami-yato.gif",
+	"https://c.tenor.com/-ECQfhQOlYUAAAAC/hug-comfort.gif",
+	"https://c.tenor.com/yuKBF_nLg1AAAAAC/hugs-hug.gif",
+	"https://c.tenor.com/WpbZhwwj6zAAAAAC/happy-hug.gif",
+	"https://c.tenor.com/vkiqyZJWJ4wAAAAC/hug-cat.gif",
+	"https://c.tenor.com/z2QaiBZCLCQAAAAC/hug-anime.gif",
+	"https://c.tenor.com/UWRoNHVtZBsAAAAC/love-you.gif",
 	"https://c.tenor.com/9e1aE_xBLCsAAAAC/anime-hug.gif",
+	"https://c.tenor.com/-3I0yCd6L6AAAAAC/anime-hug-anime.gif",
+	"https://c.tenor.com/XKJwFX9B_DUAAAAC/hug.gif",
 	"https://i.imgur.com/r9aU2xv.gif?noredirect",
 	"https://i.pinimg.com/originals/bb/84/1f/bb841fad2c0e549c38d8ae15f4ef1209.gif",
 	"https://c.tenor.com/pcULC09CfkgAAAAC/hug-anime.gif",
@@ -232,12 +243,17 @@ def getHug():
 	"https://data.whicdn.com/images/334153915/original.gif",
 	"https://c.tenor.com/ah1gTzIiOT0AAAAd/anime-hug.gif"
 	]
-	aléatoire = random.randint(0, 7) 
+	aléatoire = random.randint(0, 18) 
 	choix = banque[aléatoire]
 	return choix
 
 def getHit():
-	banque = [
+	banque = [ 
+	"https://c.tenor.com/aEX1wE-WrEMAAAAC/anime-right-in-the-stomach.gif",
+	"https://c.tenor.com/blYwpMNaaCUAAAAd/nichijou-uppercut.gif",
+	"https://c.tenor.com/G4SGjQE8wCEAAAAC/mikey-tokyo.gif",
+	"https://c.tenor.com/BY3j-feOLDkAAAAC/zero-no-tsukaima-saito-hiraga.gif",
+	"https://c.tenor.com/QszVFBEB4pAAAAAd/anime-grin.gif",
 	"https://c.tenor.com/VrWzG0RWmRQAAAAC/anime-punch.gif",
 	"https://c.tenor.com/xJyw7SRtDRoAAAAC/anime-punch.gif",
 	"https://media2.giphy.com/media/arbHBoiUWUgmc/200.gif",
@@ -253,12 +269,13 @@ def getHit():
 	"https://c.tenor.com/kvxt9X-gXqQAAAAC/anime-clannad.gif",
 	"https://c.tenor.com/aDZHwZaw9t4AAAAC/anime-kick.gif"
 	]
-	aléatoire = random.randint(0, 13) 
+	aléatoire = random.randint(0, 18) 
 	choix = banque[aléatoire]
 	return choix
 
 def getKiss():
 	banque = [
+	"https://c.tenor.com/7T1cuiOtJvQAAAAC/anime-kiss.gif",
 	"https://c.tenor.com/wDYWzpOTKgQAAAAC/anime-kiss.gif",
 	"https://aniyuki.com/wp-content/uploads/2021/07/aniyuki-anime-gif-kiss-27.gif",
 	"https://acegif.com/wp-content/uploads/anime-kissin-15.gif",
@@ -267,12 +284,13 @@ def getKiss():
 	"https://media1.giphy.com/media/ZRSGWtBJG4Tza/giphy.gif",
 	"https://i.kym-cdn.com/photos/images/newsfeed/001/372/173/dea.gif"
 	]
-	aléatoire = random.randint(0, 6) 
+	aléatoire = random.randint(0, 7) 
 	choix = banque[aléatoire]
 	return choix
 
 def getLick():
 	banque = [
+	"https://c.tenor.com/S5I9g4dPRn4AAAAC/omamori-himari-manga.gif",
 	"https://c.tenor.com/jyv9sexi1fYAAAAC/anime-lick.gif",
 	"https://i.pinimg.com/originals/56/42/0d/56420de595681d55e4ea2cc9dcc48db9.gif",
 	"https://c.tenor.com/bgGMTIJhEvEAAAAC/anime-lick-lick.gif",
@@ -290,6 +308,11 @@ def getLick():
 
 def getPat():
 	banque = [
+	"https://c.tenor.com/Hgt-mT0KXN0AAAAd/chtholly-tiat.gif",
+	"https://c.tenor.com/edHuxNBD6IMAAAAC/anime-head-pat.gif",
+	"https://c.tenor.com/0mdj-zud0RAAAAAC/tohru-kobayashi.gif",
+	"https://c.tenor.com/5dezHjhjBucAAAAC/nagi-no-asukara-manaka-mukaido.gif",
+	"https://c.tenor.com/VEIcuNYenJ0AAAAC/anime-pat.gif",
 	"https://c.tenor.com/E6fMkQRZBdIAAAAC/kanna-kamui-pat.gif",
 	"https://c.tenor.com/rZRQ6gSf128AAAAC/anime-good-girl.gif",
 	"https://c.tenor.com/6dLDH0npv6IAAAAC/nogamenolife-shiro.gif",
@@ -301,20 +324,38 @@ def getPat():
 	"https://c.tenor.com/OTqETZ7YjaMAAAAC/anime-anime-couple.gif",
 	"https://c.tenor.com/S3pfBHXIDYQAAAAC/ijiranaide-nagatoro-anime-pat.gif"
 	]
-	aléatoire = random.randint(0, 9) 
+	aléatoire = random.randint(0, 14) 
 	choix = banque[aléatoire]
 	return choix
 
 def getDismoi():
 	banque = [
 	"https://c.tenor.com/1i61l5MoH8sAAAAM/no-nope.gif",
-	"https://i.gifer.com/TOfD.gif"
+	"https://i.gifer.com/TOfD.gif",
+	"https://c.tenor.com/_VZMHoUXhI4AAAAC/sasuke-thinking.gif",
+	"https://c.tenor.com/wDDY2RNqRGEAAAAC/anime.gif",
+	"https://c.tenor.com/rnhV3fu39f8AAAAC/eating-anime.gif",
+	"https://c.tenor.com/AXC-aHSGZZgAAAAC/anime-girl-cool-anime-girl.gif",
+	"https://c.tenor.com/8nSbJK3j7EUAAAAC/laugh-anime.gif",
+	"https://c.tenor.com/g3TAB8h_QgwAAAAC/good-anime.gif",
+	"https://c.tenor.com/O3i0RscRs88AAAAC/anime-girl-anime.gif",
+	"https://c.tenor.com/2kB7JWqsFgsAAAAC/anime-winter-anime-sad.gif",
+	"https://c.tenor.com/0LtvGK3-jb0AAAAd/anime-no.gif"
 	]
 	texte = [
 	"C'est un non",
-	"C'est un oui"
+	"C'est un oui",
+	"C'est une question épineuse... Mais la réponse semble négative",
+	"Il y a des fortes chances",
+	"Il est pourtant évident que non.",
+	"C'est évident !",
+	"Cela m'étonnerait",
+	"Assurément",
+	"Évidemment",
+	"Les chances sont faibles",
+	"Plutôt non"
 	]
-	aléatoire = random.randint(0, 1) 
+	aléatoire = random.randint(0, 10) 
 	return (texte[aléatoire], banque[aléatoire])
 
 ##################### Fonction Roll #####################
