@@ -12,6 +12,11 @@ Mais le bot à fini par être supprimé. Je me suis dis que je pourrais le progr
 ![YouTube](https://user-images.githubusercontent.com/98430140/157679130-c7aac520-0df9-4532-9374-1027701099ca.png)
 
 ## 3 - Mise à jour et ajout des gifs présent
+### Suppression des Gifs
+Les gifs avec l'extension .gifv ne sont pas pris en compte par Discord, ils doivent donc être supprimés.
+![image](https://user-images.githubusercontent.com/98430140/157691432-094117b0-4243-4ae3-973d-f8b2b4418bed.png)
+ - Partie Kiss : -3 gifs
+ - Partie Hug : -2 gifs
 
 # Indication pour utiliser le bot
 Pour que le bot fonctionne il faut :
