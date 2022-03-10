@@ -1,3 +1,8 @@
+# Description du projet 
+J'ai beaucoup utilisé un bot pour exprimer des réactions ou juste rigoler sur discord. Il suffisait d'envoyer une commande comme "frappe @Quelqu'un" et le bot envoyait une image animée correspondant à l'action à la personne mentionnée.
+
+Mais le bot à fini par être supprimé. Je me suis dis que je pourrais le programmer moi même, malgrès que je n'en avais jamais codé un. Et j'ai finalement réussi à recréer à l'idendique le bot que j'utilisais autrefois. C'est une banque d'images animées qui sont envoyées aléatoirement sur la demande de l'utilisateur.
+
 # Maintenance 
 ## 1 - Ajout d'une boule de voyance
 ![oui](https://user-images.githubusercontent.com/98430140/157678822-b9657d81-f0a3-4755-ad46-6785faf76b24.png)
