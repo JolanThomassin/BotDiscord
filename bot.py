@@ -4,6 +4,10 @@ from discord.ext import commands
 import asyncio 
 import random
 
+### Youtube ###
+import urllib.request
+import re
+
 ######################################################################################################################################################
 
 ##################### Préfixe #####################
@@ -58,6 +62,11 @@ async def help(ctx):
 		inline=False,
 		name="+répulsion",
 		value=">    L'amour... 👁"
+	)
+	embed.add_field(
+		inline=False,
+		name="+youtube recherche",
+		value=">    Les recherches YouTube c'est bien, mais flemme d'aller sur l'application 👁"
 	)
 
 	await ctx.send(embed=embed)
@@ -300,7 +309,26 @@ async def roll(ctx, nbrDé:int, nbrFace:int):
 	embed.set_author(name = ctx.message.author.name, url = "https://crdev.xyz/",icon_url = ctx.message.author.avatar_url) 
 	await ctx.send(embed=embed) 
 
+##################### Fonction +Youtube #####################
+@client.command(pass_context=True, name = "youtube", aliases =["ytb"])
+async def youtube(ctx, *args):
+	tousMots = ""
+	for i in range(0, len(args)) :
+		tousMots = tousMots + "+" + args[i]
+
+	lienRechercheVideo = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + tousMots)
+	lienVideo = re.findall(r"watch\?v=(\S{11})", lienRechercheVideo.read().decode())
+	résultat = "https://www.youtube.com/watch?v=" + lienVideo[0]
+
+	embed=discord.Embed(
+		title="Voici le résultat de votre recherche : ",
+		description= résultat,
+		color=0x8B0000
+	)
+	embed.set_author(name = ctx.message.author.name, url = "https://crdev.xyz/",icon_url = ctx.message.author.avatar_url) 
+	await ctx.send(embed=embed) 
+
 ######################################################################################################################################################
-client.run("clé")
+client.run("Token")
 
 
