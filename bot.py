@@ -55,6 +55,11 @@ async def help(ctx):
 	)
 	embed.add_field(
 		inline=False,
+		name="+dismoi question",
+		value=">    La boule de cristal vous répondra. 🔮 "
+	)
+	embed.add_field(
+		inline=False,
 		name="+roll nombre_de_dé nombre_de_face",
 		value=">    Et là y a un énorme dragon qui vous fonce dessus ! Je fais mes jets de dégâts ! T'est mort ! T'est mort ! T'est mort ! AAAAAAAAAAAAAAAAH ! 🎲"
 	)
@@ -66,7 +71,7 @@ async def help(ctx):
 	embed.add_field(
 		inline=False,
 		name="+youtube recherche",
-		value=">    Les recherches YouTube c'est bien, mais flemme d'aller sur l'application 👁"
+		value=">    Les recherches YouTube c'est bien, mais flemme d'aller sur l'application 🎥"
 	)
 
 	await ctx.send(embed=embed)
@@ -172,6 +177,19 @@ async def pat(ctx, member:discord.Member):
 		color=0x8B0000
 		)
 		gif = getPat()
+
+	embed.set_image(url=gif)
+	await ctx.send(embed=embed)
+
+##################### Fonction +dismoi #####################
+@client.command(pass_context=True, name = "dismoi", aliases =["dm"])
+async def dismoi(ctx):
+	imageEtTexte = getDismoi()
+	embed=discord.Embed(
+	title= imageEtTexte[0], # Texte retourné de la fonction aléatoire
+	color=0x8B0000
+	)
+	gif = imageEtTexte[1] # Image retourné de la fonction aléatoire
 
 	embed.set_image(url=gif)
 	await ctx.send(embed=embed)
@@ -292,6 +310,18 @@ def getPat():
 	choix = banque[aléatoire]
 	return choix
 
+def getDismoi():
+	banque = [
+	"https://c.tenor.com/1i61l5MoH8sAAAAM/no-nope.gif",
+	"https://i.gifer.com/TOfD.gif"
+	]
+	texte = [
+	"C'est un non",
+	"C'est un oui"
+	]
+	aléatoire = random.randint(0, 1) 
+	return (texte[aléatoire], banque[aléatoire])
+
 ##################### Fonction Roll #####################
 @client.command(pass_context=True, name = "roll")
 async def roll(ctx, nbrDé:int, nbrFace:int):
@@ -327,6 +357,7 @@ async def youtube(ctx, *args):
 	)
 	embed.set_author(name = ctx.message.author.name, url = "https://crdev.xyz/",icon_url = ctx.message.author.avatar_url) 
 	await ctx.send(embed=embed) 
+
 
 ######################################################################################################################################################
 client.run("Token")
